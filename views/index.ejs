@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <% include partials/template/head.ejs %>
   </head>
   <body>
+    <% include partials/template/header.ejs %>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <p>This is where its all begins.</p>
+    <% include partials/template/jsdefaults.ejs %>
+    <% include partials/template/footer.ejs %>
   </body>
 </html>
